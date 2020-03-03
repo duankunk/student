@@ -27,9 +27,12 @@ public class tjdd extends HttpServlet {
 		//·ÀÖ¹ÂÒÂë
 		req.setCharacterEncoding("UTF-8");
 		service.Select s = new service.Select();
-		
-		req.setAttribute("stus", s.all());
-		req.getRequestDispatcher("/index.jsp").forward(req, resp);
+		req.getSession().setAttribute("stus", s.all());
+		resp.sendRedirect("index.jsp");
+		/*
+		 * req.setAttribute("stus", s.all());
+		 * req.getRequestDispatcher("/index.jsp").forward(req, resp);
+		 */
 	}
 	
 }
