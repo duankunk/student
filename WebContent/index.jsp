@@ -13,9 +13,6 @@
 	<tr><th> name</thd></tr>
 	<c:forEach items="${ stus }" var="s">
 		<tr><td> ${ s.getName() }</td></tr>
-		
-			
-		
 	</c:forEach>
 	</table>
 </body>
