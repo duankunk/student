@@ -30,6 +30,7 @@ public class tjdd extends HttpServlet {
 		
 		req.setAttribute("stus", s.all());
 		req.getRequestDispatcher("/index.jsp").forward(req, resp);
+		
 	}
 	
 }
